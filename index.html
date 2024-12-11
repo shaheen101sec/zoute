@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZouteArts - Unique Clothing Designs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f7f4ec; /* Light beige background */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #222; /* Black */
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo img {
+      max-height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #d4af37; /* Gold */
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    p {
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 1.1em;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #d4af37; /* Gold */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #b88a30;
+    }
+
+    /* About Section */
+    #about {
+      background: linear-gradient(135deg, #f7f4ec, #fff);
+    }
+
+    #about img {
+      width: 100px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.2em;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    /* Contact Section */
+    #contact {
+      background: #222;
+      color: #fff;
+    }
+
+    #contact p {
+      color: #ccc;
+    }
+
+    #contact a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    #contact a:hover {
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #222;
+      color: #ccc;
+      padding: 20px 0;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    footer ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #d4af37;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="zoute.jpg" alt="ZouteArts Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h1>Welcome to ZouteArts</h1>
+      <p>At ZouteArts, we are Shaheen and Sila, two best friends passionate about creating artistic and modern designs. Our goal is to redefine fashion with a mix of creativity, authenticity, and innovation.</p>
+      <p>Check out our <a href="https://www.redbubble.com/people/zoutearts" class="button" target="_blank">Redbubble Store</a> or follow us on <a href="https://www.instagram.com/zoutearts/" target="_blank">Instagram</a>.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Our Designs</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="zoute.jpg" alt="Design 1">
+          <div class="caption">Design 1</div>
+        </div>
+        <div class="gallery-item">
+          <img src="zoute.jpg" alt="Design 2">
+          <div class="caption">Design 2</div>
+        </div>
+        <div class="gallery-item">
+          <img src="zoute.jpg" alt="Design 3">
+          <div class="caption">Design 3</div>
+        </div>
+        <div class="gallery-item">
+          <img src="zoute.jpg" alt="Design 4">
+          <div class="caption">Design 4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Follow us:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/zoutearts/" target="_blank">Instagram: @zoutearts</a></li>
+        <li><a href="https://www.redbubble.com/people/zoutearts" target="_blank">Redbubble: ZouteArts</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ZouteArts. All rights reserved.</p>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
